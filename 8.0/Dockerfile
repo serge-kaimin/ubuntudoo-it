@@ -21,7 +21,7 @@ RUN set -x; \
         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm \
         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb \
         && pip install psycogreen==1.0 \
-        && pip install pyxb \
+        && pip install pyxb==1.2.4 \
         && pip install codicefiscale
 
 
@@ -47,7 +47,8 @@ RUN mkdir -p /mnt/extra-addons \
 VOLUME ["/var/lib/odoo", "/mnt/extra-addons"]
 
 # Add Italian addons
-COPY ./l10n_it_* /mnt/extra-addons/
+COPY ./addons /mnt/extra-addons/
+RUN ls -la /mnt/extra-addons/*
 
 # Expose Odoo services
 EXPOSE 8069 8071
