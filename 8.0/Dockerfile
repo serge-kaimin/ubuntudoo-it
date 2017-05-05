@@ -46,8 +46,11 @@ RUN mkdir -p /mnt/extra-addons \
         && chown -R odoo /mnt/extra-addons
 VOLUME ["/var/lib/odoo", "/mnt/extra-addons"]
 
+# Add Italian addons
+COPY ./l10n_it_* /mnt/extra-addons/
+
 # Expose Odoo services
-EXPOSE 8099 8071
+EXPOSE 8069 8071
 
 # Set the default config file
 ENV OPENERP_SERVER /etc/odoo/openerp-server.conf
