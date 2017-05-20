@@ -25,6 +25,12 @@ git clone -b 10.0 https://github.com/OCA/server-tools.git
 mv server-tools/date_range ./addons
 rm -rf server-tools 
 
+rm -rf partner-contact
+git clone -b 10.0 https://github.com/OCA/partner-contact.git
+mv partner-contact/base_location ./addons
+mv partner-contact/base_location_geonames_import ./addons
+rm -rf partner-contact
+
 rm -rf l10n-italy-supplemental
 git clone -b 10.0 https://github.com/zeroincombenze/l10n-italy-supplemental.git
 mv l10n-italy-supplemental/l10n_it_* ./addons
