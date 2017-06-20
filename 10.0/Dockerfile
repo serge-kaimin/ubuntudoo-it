@@ -21,7 +21,7 @@ RUN set -x; \
         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb \
         && pip install psycogreen==1.0 \
         && pip install pyxb \
-        && pip install codicefiscale
+        && pip install codicefiscale==0.9
 
 # Install Odoo
 ENV ODOO_VERSION 10.0
