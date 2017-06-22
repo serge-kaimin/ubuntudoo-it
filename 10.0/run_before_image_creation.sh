@@ -23,7 +23,7 @@ rm -rf stock-logistics-workflow
 rm -rf server-tools 
 git clone -b 10.0 https://github.com/OCA/server-tools.git
 mv server-tools/date_range ./addons
-rm -rf server-tools 
+rm -rf server-tools
 
 rm -rf partner-contact
 git clone -b 10.0 https://github.com/OCA/partner-contact.git
