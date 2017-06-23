@@ -3,7 +3,7 @@ Ubuntudoo - Italian version
 
 Before building the image:
 
-bash run_before_image_creation.py 
+bash run_before_image_creation.sh 
 
 How to build the image:
 
