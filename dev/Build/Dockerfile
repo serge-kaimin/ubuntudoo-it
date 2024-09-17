@@ -51,7 +51,7 @@ RUN set -x; \
 # Install Odoo
 ARG ODOO_VERSION=12.0
 #ENV ODOO_VERSION 
-ARG ODOO_RELEASE=20190108
+ARG ODOO_RELEASE=20190530
 #ENV ODOO_RELEASE 20190108
 RUN set -x; \
         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb \
